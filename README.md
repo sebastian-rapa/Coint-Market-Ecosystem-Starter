@@ -2,14 +2,14 @@
 
 ---
 ### Project Description
-> Contains `CLI tools` that helps `set up` and `run` the 
+> Contains `CLI tools` that helps `set up` and `run` our ecosystem 
 
 ### Installation
 
 ---
-#### 1. Go to project directory
+#### 1. Go to Projects Directory
 ```shell
-cd <path> # Replace path with system path to directory where you want the project to be cloned
+cd <pathDirectory> # Replace pathDirectory with the path to your Projects Directory  
 ```
 
 #### 2. Clone git repository
