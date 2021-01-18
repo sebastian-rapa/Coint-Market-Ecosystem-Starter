@@ -12,5 +12,19 @@ if [[ -z $JAVA_VERSION || ${JAVA_VERSION:0:2} -ne 15 ]]; then
 fi
 
 # Check if the system has maven
+MAVEN_VERSION=$(mvn --version)
+if [[ -z $MAVEN_VERSION ]]; then
+  echo "Maven is not installed on your machine"
+fi
 
-# Check if the system has MongoDB
+# Check if the system has MongoShell
+MONGO_SHELL_VERSION=$(mongo --version)
+if [[ -z $MONGO_SHELL_VERSION ]]; then
+  echo "Mongo shell is not installed on your machine"
+fi
+
+# Check if the system has MongoDB Server
+MONGO_SERVER_VERSION=$(mongod --version)
+if [[ -z $MONGO_SERVER_VERSION ]]; then
+  echo "Mongo server is not installed on your machine or you need root privilliges to access it."
+fi
