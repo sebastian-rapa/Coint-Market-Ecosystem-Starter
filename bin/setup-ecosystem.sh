@@ -32,10 +32,10 @@ checkRequiredResources() {
     echo "Git is not installed on your machine"
     SOME_RESOURCES_ARE_NOT_INSTALLED=1
   fi
-  # Check if the system has java 15
+  # Check if the system has java 11
   JAVA_VERSION=$(java --version | grep openjdk | awk '{ print $2 }')
-  if [[ -z $JAVA_VERSION || ${JAVA_VERSION:0:2} -ne 15 ]]; then
-    echo "Java 15 is not installed on your machine"
+  if [[ -z $JAVA_VERSION || ${JAVA_VERSION:0:2} -ne 11 ]]; then
+    echo "Java 11 is not installed on your machine"
     SOME_RESOURCES_ARE_NOT_INSTALLED=1
   fi
 
